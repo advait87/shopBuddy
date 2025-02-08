@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Analysis</title>
+    <style>
+      /* Reset some default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #f7f7f7, #e8e8e8);
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .container {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        width: 80%;
+        text-align: center;
+        max-width: 100%;
+        font-weight: 400;
+      }
+
+      h1 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 30px;
+      }
+
+      #result {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        color: #333;
+        font-size: 16px;
+        min-height: 100px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        box-sizing: border-box;
+      }
+
+      .loading {
+        font-size: 18px;
+        font-weight: 600;
+        color: #f39c12;
+      }
+
+      /* Button Styling */
+      button {
+        background-color: #3498db;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      button:hover {
+        background-color: #2980b9;
+      }
+
+      button:active {
+        transform: scale(0.98);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 500px) {
+        .container {
+          padding: 20px;
+        }
+
+        h1 {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Product Analysis</h1>
+      <p>Analyzing products based on the current page... Please wait.</p>
+
+      <!-- Loading message will be displayed while fetching the analysis -->
+      <div class="loading" id="loadingMessage">Loading analysis...</div>
+
+      <!-- Result will be displayed here -->
+      <div id="result"></div>
+
+
+    </div>
+
+    <script src="analyze.js"></script>
+  </body>
+</html>
