@@ -39,7 +39,7 @@ const getProductsData = () => {
       `;
   
       const apiUrl = 'https://api.groq.com/openai/v1/chat/completions';
-      const apiKey = "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";  // Replace with your actual Groq API key
+      const apiKey = "";  // Replace with your actual Groq API key
   
       const requestBody = {
         model: "llama-3.3-70b-versatile",
